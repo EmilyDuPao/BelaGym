@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"> 
+    <title>BelaGym - Criar Conta </title>
+    <link rel="icon" href="img/2 logo belagym.png">
+</head>
+<body>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/gym01.jpg'); 
+            background-repeat: no-repeat; 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0
+        }
+
+
+    .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    background-color: rgb(0, 0, 0); 
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+  }
+  
+  .box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .box .inputBox {
+    position: relative;
+    margin-bottom: 20px; 
+  }
+  
+  .box .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .box .inputBox input:focus ~ label,
+  .box .inputBox input:valid ~ label {
+    top: -18px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+  }
+  
+  .box input[type="submit"] {
+    background-color: #ff3d239c;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+ 
+    </style>
+    <div class="box">
+        <h2>Crie sua conta</h2>
+          <form action="">
+            <div class="inputBox">
+                <input type="text"  name="name" autocomplete="off" autofocus="" required>
+                <label for=""></label>
+            </div>
+            <div class="inputBox">
+                <input type="password"  name="password" required>
+                <label for="">Senha</label>
+            </div>
+            <input type="submit" value="Entrar">
+          </form>
+    </div>
+</body>
+</html>
